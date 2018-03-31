@@ -1,0 +1,29 @@
+﻿@model List<p01.Models.Pelicula>
+
+@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Titulo</th>
+            <th>Duracion</th>
+            <th>Pais</th>
+            <th>Lanzamiento</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var peli in Model) {
+          <tr>
+              <td>@peli.Titulo</td>
+              <td>@peli.Duracion</td>
+              <td>@peli.Pais</td>
+              <td>@peli.Pubicacion</td>
+          </tr>  
+        }
+    </tbody>
+
+</table>
