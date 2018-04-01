@@ -16,9 +16,7 @@ namespace p01.Controllers
 
         public ActionResult About()
         {
-            var peliculaservice = new PeliculaService();
-            var model = peliculaservice.ObtenerPeliculas();
-            return View(model);
+            return View();
         }
 
         public ActionResult Contact()
